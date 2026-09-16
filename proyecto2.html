@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 08 - Plataforma E-Com</title>
+    <link rel="stylesheet" href="../plantilla/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container py-4">
+        <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="#">Tienda</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Laptops</li>
+            </ol>
+        </nav>
+
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            ¡Campaña de Descuentos! <strong>20% OFF</strong> con el cupón <strong>DESCUENTO20</strong>.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="d-flex align-items-center mb-4 gap-2">
+            <span class="fw-bold me-2">Categorías:</span>
+            <div class="btn-group" role="group" aria-label="Filtro de categorias">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">Todas</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">Laptops</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio3">Accesorios</label>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header d-flex justify-content-between align-items-center bg-light">
+                        <span class="text-secondary fw-semibold">Oferta Relámpago</span>
+                        <span class="badge bg-danger">Popular</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title fs-5 fw-bold">Workstation Pro 15"</h4>
+                        <p class="card-text text-muted">Equipo de cómputo para desarrollo de software y renderizado 3D.</p>
+                        
+                        <ul class="list-group list-group-flush my-3">
+                            <li class="list-group-item px-0">Procesador Intel i9</li>
+                            <li class="list-group-item px-0">32GB RAM DDR5</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-white d-flex justify-content-between align-items-center border-0 pt-0 pb-3">
+                        <span class="fs-4 fw-bold text-dark">S/ 5,200</span>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header d-flex justify-content-between align-items-center bg-light">
+                        <span class="text-secondary fw-semibold">Últimas Unidades</span>
+                        <span class="badge bg-success">En Stock</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title fs-5 fw-bold">Ultrabook Slim 14"</h4>
+                        <p class="card-text text-muted">Portabilidad extrema con batería de hasta 18 horas de duración.</p>
+                        
+                        <ul class="list-group list-group-flush my-3">
+                            <li class="list-group-item px-0">Procesador AMD Ryzen 7</li>
+                            <li class="list-group-item px-0">16GB RAM DDR4</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-white d-flex justify-content-between align-items-center border-0 pt-0 pb-3">
+                        <span class="fs-4 fw-bold text-dark">S/ 3,800</span>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../plantilla/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
